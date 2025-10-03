@@ -13,7 +13,8 @@ header {
 /* Logo */
 .logo h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 40px;
+  font-family: "Concert One", sans-serif;
   color: #333;
 }
 
