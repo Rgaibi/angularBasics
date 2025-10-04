@@ -1,0 +1,11 @@
+.top-header {
+  background-color: #ff4d4f; /* rouge promotion */
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.top-header strong {
+  font-weight: bold;
+}
