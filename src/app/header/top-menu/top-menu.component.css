@@ -1,29 +1,26 @@
-/* Top bar */
 .top-bar {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #222; /* foncé */
+  background-color: #222;
   color: white;
-  padding: 5px 20px;
   font-size: 14px;
+  padding: 5px 20px;
 }
 
 .top-links {
   display: flex;
-  align-items: center;
-  gap: 15px; /* espace entre les liens sauf Sign Up/Login */
+  justify-content: flex-end; /* liens alignés à droite */
+  gap: 15px;
 }
 
 .top-links a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .top-links a:hover {
-  text-decoration: underline;
+  color: #f0a500;
 }
 
-/* Sign Up / Login restent collés */
-.top-links a.signup-login {
-  margin-left: 0; /* pas d’espace supplémentaire */
+.signup-login {
+  font-weight: bold;
 }
