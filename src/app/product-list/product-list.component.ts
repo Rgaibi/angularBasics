@@ -11,7 +11,8 @@ export class ProductListComponent {
     price : 789,
     color : 'Black',
     discount : 10,
-    inStock : 5
+    inStock : 5,
+    pImage : '/assets/images/iphone.webp'
   }
   getDiscountedPrice() {
     return this.product.price - (this.product.price * this.product.discount / 100)
