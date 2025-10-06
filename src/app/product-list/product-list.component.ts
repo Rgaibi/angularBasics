@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  //name = "karim rgaibi";
+  listOfString: String[] = ['Karim', 'Alice', 'Catherine', 'Khadija', 'Denis'];
+  
+  
+  
+  
+  
+  
+  
+  /*//name = "karim rgaibi";
   addToCart : number = 0;
   product = {
     name : 'iPhone X',
@@ -36,7 +44,7 @@ export class ProductListComponent {
       this.addToCart++;
     }
     
-  }
+  }*/
   
 
 }

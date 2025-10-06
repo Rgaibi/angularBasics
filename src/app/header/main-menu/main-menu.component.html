@@ -1,8 +1,7 @@
 <nav>
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Products</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
+    <li *ngFor="let menu of mainMenuItems">
+      <a href="#">{{menu}}</a>
+    </li>
   </ul>
 </nav>

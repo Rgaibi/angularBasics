@@ -1,5 +1,6 @@
 <div class="ecom-product-container">
     <search></search>
+<!--
     <img [src]="product.pImage" width="200" height="150">
     <p>Name : {{ product.name }}</p>
     <p>Price : {{ '$' + product.price }}</p>
@@ -10,6 +11,12 @@
     <button (click)="decrementCartValue()">-</button>
     <span>{{ addToCart }}</span> 
     <button (click)="incrementCartValue()">+</button>  
-    <!-- <input (input)="onNameChange($event)"><br>
-    <p>name = {{ name }}</p>-->
-</div>
+    <input (input)="onNameChange($event)"><br>
+    <p>name = {{ name }}</p>
+
+-->
+
+    <!-- <div *ngFor="let item of listOfString">
+        <p>Current element of array is : {{ item }}</p>
+    </div> -->
+</div> 
