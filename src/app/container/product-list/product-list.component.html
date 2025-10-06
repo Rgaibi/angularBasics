@@ -2,14 +2,14 @@
 
     <div class="product-item" *ngFor="let prod of products">
 
-        <!-- COEUR FAVORI -->
+        <!-- BADGE 75% OFF à gauche -->
+        <div class="on-sale-tag" *ngIf="prod.discountPrice">{{ (prod.discountPrice / prod.price * 100).toFixed(0) }}%</div>
+
+        <!-- COEUR FAVORI à droite -->
         <div class="wishlist-sale-container">
-            <div class="add-to-wishlist">
-                <button>
-                    <i class="fa-regular fa-heart" aria-hidden="true"></i>
-                </button>
-            </div>
-            <!-- <div class="on-sale-tag">75% OFF</div> -->
+            <button class="add-to-wishlist">
+                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </button>
         </div>
 
         <!-- IMAGE PRODUIT -->
@@ -18,9 +18,7 @@
         </div>
 
         <!-- PRIX -->
-        <div class="add-to-price">
-            {{ prod.price }}
-        </div>
+        <div class="add-to-price">{{ prod.price }}</div>
 
         <!-- NOM -->
         <div class="product-name">{{ prod.name }}</div>
@@ -30,7 +28,7 @@
 
         <!-- COULEURS DISPONIBLES -->
         <div class="product-available-colors">{{ prod.color.length }} Colors . Best Seller</div>
+
     </div>
 
 </div>
-

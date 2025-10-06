@@ -8,18 +8,32 @@
   border-bottom: 1px solid #ddd;
 }
 
-/* Logo à gauche avec position absolue */
 .logo {
   position: absolute;
-  left: 20px;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #ff7a59, #ff4d6d);
+  padding: 8px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
 }
 
 .logo h1 {
   margin: 0;
-  font-size: 24px;
-  color: #333;
-  font-weight: bold;
+  font-size: 32px;
+  font-family: 'Concert One', cursive;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
+
+.logo:hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
 
 
 
