@@ -2,7 +2,7 @@
   <div class="input-group" style="max-width: 400px;">
     <!--<input type="text" class="form-control" placeholder="Search products..." [value]="searchText" (input)="updateSearchText($event)"> -->
     <input type="text" class="form-control" placeholder="Search products..." [(ngModel)]="searchText">
-    <button class="btn btn-dark" type="button">Search</button>
+    <button   [ngClass]="searchText ? 'btn-active' : 'btn-inactive'" type="button" [disabled]="!searchText">Search</button>
   </div>
 </div>
   <div class="mt-2 text-center">
