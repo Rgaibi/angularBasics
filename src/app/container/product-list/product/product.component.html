@@ -1,0 +1,31 @@
+    <div class="product-item">
+
+        <!-- BADGE 75% OFF à gauche -->
+        <div class="on-sale-tag" *ngIf="product.discountPrice">{{ (product.discountPrice / product.price * 100).toFixed(0) }}%</div>
+
+        <!-- COEUR FAVORI à droite -->
+        <div class="wishlist-sale-container">
+            <button class="add-to-wishlist">
+                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <!-- IMAGE PRODUIT -->
+        <div class="product-image">
+            <img [src]="product.imageURL" alt="Product Image">
+        </div>
+
+        <!-- PRIX -->
+        <div class="add-to-price">{{ product.price }}</div>
+
+        <!-- NOM -->
+        <div class="product-name">{{ product.name }}</div>
+
+        <!-- CATÉGORIE -->
+        <div class="product-category">{{ product.gender }} . {{ product.category }} . {{ product.brand }}</div>
+
+        <!-- COULEURS DISPONIBLES -->
+        <div class="product-available-colors">{{ product.color.length }} Colors . Best Seller</div>
+        <div class="product-inStock" [ngStyle]="{fontWeight: 'Thin', color: product.is_in_inventory ? 'green' : 'red'}">{{ product.is_in_inventory ? 'Available in Stock' : 'Not Available in Stock' }} </div>
+
+    </div>
