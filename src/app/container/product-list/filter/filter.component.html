@@ -2,10 +2,10 @@
   <div class="filter-header">
     <h3>Filter</h3>
   </div>
+
   <div class="filter-content">
-    <!-- Boutons de filtre -->
-    <button class="filter-option active">All ({{ all }})</button>
-    <button class="filter-option">In Stock ({{ inStock }})</button>
-    <button class="filter-option">Out Of Stock ({{ outOfStock }})</button>
+    <input type="radio" name="filter" value="selectAll" [(ngModel)]="selectedFilterRadionButton" (change)="onSelectedFilterButtonChanged()"> All ({{ all }})
+    <input type="radio" name="filter" value="selectInStock" [(ngModel)]="selectedFilterRadionButton" (change)="onSelectedFilterButtonChanged()"> In Stock ({{ inStock }})
+    <input type="radio" name="filter" value="selectOutOfStock" [(ngModel)]="selectedFilterRadionButton" (change)="onSelectedFilterButtonChanged()"> Out Of Stock ({{ outOfStock }})
   </div>
 </div>

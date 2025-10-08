@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./container.component.css']
 })
 export class containerComponent {
-  listOfString: String[] = ['Karim', 'Alice', 'Catherine', 'Khadija', 'Denis'];
+  listOfString: string[] = ['Karim', 'Alice', 'Catherine', 'Khadija', 'Denis'];
   
   
   

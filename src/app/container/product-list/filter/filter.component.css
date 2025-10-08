@@ -1,45 +1,18 @@
-.filter-box {
-  background-color: #fff;
-  border: 0px solid #ddd;
-  border-radius: 12px;
-  padding: 12px 15px;      /* moins de padding */
-  max-width: 100%;          /* jamais plus que l’écran */
-  width: 100%;              /* prend tout l’espace possible */
-  box-sizing: border-box;   /* inclut padding dans la largeur */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  font-family: 'Montserrat', sans-serif;
-  margin: 15px 0;           /* juste un petit espace vertical */
-}
-
-.filter-header h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
 .filter-content {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: flex-start; /* alignement gauche */
+  display: flex;       /* aligne tout sur une ligne */
+  gap: 15px;           /* espace entre les boutons */
+  align-items: center;
 }
 
-.filter-option {
-  padding: 6px 14px;         /* plus compact */
-  border-radius: 50px;
-  border: 1px solid #ccc;
-  background-color: #f5f5f5;
+.filter-content input[type="radio"] {
+  /* on garde le bouton visible mais on peut ajuster la taille */
+  width: auto;
+  margin-right: 5px;
   cursor: pointer;
-  font-size: 13px;
-  font-weight: 500;
-  transition: all 0.3s ease;
 }
 
-.filter-option:hover,
-.filter-option.active {
-  background-color: #000;
-  color: #fff;
-  border-color: #000;
+/* optionnel : changer le style du texte quand sélectionné */
+.filter-content input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: #007bff;
 }
