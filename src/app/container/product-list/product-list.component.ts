@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'product-list',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = [
+products = [
     {
       id: 1,
       name: "Nike React Infinity Run Flyknit",
@@ -536,6 +536,9 @@ export class ProductListComponent {
   totalProductCount = this.products.length;
   totalProductInStock = this.products.filter(p => p.is_in_inventory ===true).length;
   totalProductOutOfStock = this.products.filter(p => p.is_in_inventory ===false).length;
+
+  @Input()
+  searchText: string = '';
 
   selectedFilterRadioButton: string = 'selectAll';
 

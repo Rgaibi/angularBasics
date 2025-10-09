@@ -1,7 +1,7 @@
 <div class="d-flex justify-content-center my-3">
   <div class="input-group" style="max-width: 400px;">
     <!--<input type="text" class="form-control" placeholder="Search products..." [value]="searchText" (input)="updateSearchText($event)"> -->
-    <input type="text" class="form-control" placeholder="Search products..." [(ngModel)]="searchText">
+    <input type="text" class="form-control" placeholder="Search products..." [(ngModel)]="searchText" (input)="onSearchTextChanged()">
     <button   [ngClass]="searchText ? 'btn-active' : 'btn-inactive'" type="button" [disabled]="!searchText">Search</button>
   </div>
 </div>

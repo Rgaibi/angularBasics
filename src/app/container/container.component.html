@@ -1,5 +1,5 @@
 <div class="ecom-container">
-    <search></search>
+    <search (searchTextChanged)="setSearchText($event)"></search>
 <!--
     <img [src]="product.pImage" width="200" height="150">
     <p>Name : {{ product.name }}</p>
@@ -19,5 +19,5 @@
     <!-- <div *ngFor="let item of listOfString">
         <p>Current element of array is : {{ item }}</p>
     </div> -->
-    <product-list></product-list>
+    <product-list [searchText]="searchText"></product-list>
 </div> 
