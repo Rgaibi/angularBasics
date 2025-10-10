@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Product } from 'src/app/models/Product';
 
 @Component({
   selector: 'product-list',
@@ -6,7 +7,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-products = [
+
+  selectedProduct: Product;
+  products = [
     {
       id: 1,
       name: "Nike React Infinity Run Flyknit",
