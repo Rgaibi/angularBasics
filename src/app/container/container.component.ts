@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
   selector: 'app-container',
@@ -9,6 +10,9 @@ export class containerComponent {
   listOfString: string[] = ['Karim', 'Alice', 'Catherine', 'Khadija', 'Denis'];
 
   searchText: string = ''; 
+
+  @ViewChild('productListC')
+  productListComponent: ProductListComponent;
 
   setSearchText(value: string) {
     this.searchText = value;

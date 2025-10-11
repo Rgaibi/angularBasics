@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'search',
@@ -15,10 +15,12 @@ export class SearchComponent {
     this.searchTextChanged.emit(this.searchText);
   }
 
+  @ViewChild('searchInput', {static: true})
+  searchInputEl: ElementRef
 
-  updateSearchText(inputEl: HTMLInputElement) {
+  updateSearchText() {
     // this.searchText = event.target.value;
-    this.searchText = inputEl.value;
+    this.searchText = this.searchInputEl.nativeElement.value;
     this.searchTextChanged.emit(this.searchText);
 
   }
