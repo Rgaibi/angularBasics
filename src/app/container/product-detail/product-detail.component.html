@@ -6,7 +6,7 @@
 
   <div class="product-detail-content">
     <!-- Image -->
-    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-mens-running-shoe-DgF6nr.jpg" alt="Produit" />
+    <img [src]="product.imageURL" alt="Produit" />
 
     <!-- Nom et marque -->
     <h4 class="product-name">{{ product.name }}</h4>
@@ -48,7 +48,10 @@
     </p>
 
     <!-- Bouton acheter -->
-    <button class="buy-btn">Acheter maintenant</button>
+    <button class="buy-btn" *ngIf="product.is_in_inventory; else notifyMe">ADD TO CART</button>
+    <ng-template #notifyMe>
+      <button class="buy-btn">NOTIFY ME</button>
+    </ng-template>
   </div>
 </div>
 
