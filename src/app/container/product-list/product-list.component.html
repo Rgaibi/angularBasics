@@ -1,12 +1,16 @@
 
 <app-filter [all]="totalProductCount" [inStock]="totalProductInStock" [outOfStock]="totalProductOutOfStock" (selectedFilterRadioButtonChanged)="onFilterChanged($event)">  </app-filter>
 <div class="eCom-product-list">
-    <div *ngFor="let prod of products" (click)="selectedProduct = prod">
+    <ng-container *ngFor="let prod of products" >
         <!-- *ngIf="selectedFilterRadioButton === 'selectAll' ||
          (selectedFilterRadioButton === 'selectInStock' && prod.is_in_inventory) ||
          (selectedFilterRadioButton === 'selectOutOfStock' && !prod.is_in_inventory)" -->
-        <app-product  [product]="prod" *ngIf="searchText === '' || prod.name.toLowerCase().includes(searchText)"></app-product>
+        <app-product  
+            [product]="prod" 
+            *ngIf="searchText === '' || prod.name.toLowerCase().includes(searchText)"
+            (click)="selectedProduct = prod">
+        </app-product>
 
-    </div>
+    </ng-container>
 
 </div>
