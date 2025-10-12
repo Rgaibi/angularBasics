@@ -21,4 +21,28 @@
     </div> -->
     <product-list [searchText]="searchText" #productListC></product-list>
     <product-detail *ngIf="productListC.selectedProduct" [productListComp]="productListComponent"></product-detail>
+    <div class="featured-products">
+        <div class="featured-product-heading">
+            <h1>Latest Arrival In Popular Brands</h1>
+        </div>
+
+        <div class="brands-row">
+            <featured-brands>
+                <h2>Adidas</h2>
+                <p>Comfort and performance in every step.</p>
+                <button>Shop Now</button>
+            </featured-brands>
+            <featured-brands>
+                <h2>nike</h2>
+                <p>Just do it. Discover the latest Nike trends.</p>
+                <button>Shop Now</button>
+            </featured-brands>
+            <featured-brands>
+                <h2>reebok</h2>
+                <p>Style and power for all your workouts</p>
+                <button>Shop Now</button>
+            </featured-brands>
+        </div>    
+    </div>
+
 </div> 

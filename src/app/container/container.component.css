@@ -1,1 +1,23 @@
+.featured-products {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+.featured-product-heading h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.brands-row {
+  display: flex;           /* affiche les enfants en ligne */
+  gap: 20px;               /* espace entre chaque carte */
+  flex-wrap: wrap;         /* si l’écran est petit, passe à la ligne */
+  justify-content: center; /* centre horizontalement */
+}
+
+
+
 
