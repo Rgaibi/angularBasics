@@ -38,7 +38,7 @@
 }
 
 .product-name { font-size:1.2rem; font-weight:600; margin-bottom:5px; color:#222; }
-.brand, .gender, .category, .stock { color:#555; margin:3px 0; }
+/* .brand, .gender, .category, .stock { color:#555; margin:3px 0; } */
 .price { font-weight:bold; color:#2d8f6f; margin:5px 0; }
 .discounted-price { color:red; margin-left:10px; font-weight:bold; }
 
@@ -55,3 +55,4 @@
   transition: background 0.3s ease; width:100%;
 }
 .buy-btn:hover { background-color:#237357; }
+

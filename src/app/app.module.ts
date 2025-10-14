@@ -14,6 +14,7 @@ import { ProductComponent } from './container/product-list/product/product.compo
 import { FilterComponent } from './container/product-list/filter/filter.component';
 import { ProductDetailComponent } from './container/product-detail/product-detail.component';
 import { FeaturedBrandsComponent } from './container/featured-brands/featured-brands.component';
+import { SetColor } from './CustomDirectives/SetColor.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FeaturedBrandsComponent } from './container/featured-brands/featured-br
     ProductComponent,
     FilterComponent,
     ProductDetailComponent,
-    FeaturedBrandsComponent
+    FeaturedBrandsComponent,
+    SetColor
   ],
   imports: [
     BrowserModule,

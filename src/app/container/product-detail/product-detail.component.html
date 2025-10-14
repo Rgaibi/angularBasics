@@ -9,12 +9,12 @@
     <img [src]="product.imageURL" alt="Produit" />
 
     <!-- Nom et marque -->
-    <h4 class="product-name">{{ product.name }}</h4>
-    <p class="brand">Marque : ExampleBrand</p>
+    <h4 class="product-name" setColor>{{ product.name }}</h4>
+    <p class="brand" setColor><span>Marque : {{product.brand}}</span></p>
 
     <!-- Genre et catégorie -->
-    <p class="gender">Genre : Homme</p>
-    <p class="category">Catégorie : Chaussures</p>
+    <p class="gender" setColor><span>Genre : {{ product.gender }}</span></p>
+    <p class="category" setColor><span>Catégorie : {{ product.category }}</span></p>
 
     <!-- Prix et remise -->
     <p class="price">
