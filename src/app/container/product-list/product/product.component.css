@@ -22,10 +22,10 @@ body {
   transition: transform 0.2s;
 }
 
-.product-item:hover {
+/* .product-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-}
+} */
 
 /* Badge % OFF */
 .on-sale-tag {
@@ -111,3 +111,17 @@ body {
   margin-bottom: 4px;
   color: inherit;
 }
+
+
+.product-item.zoomed {
+  transform: scale(1.05);
+  transform-origin: center;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+  z-index: 10;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+

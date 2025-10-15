@@ -48,7 +48,7 @@
     </p>
 
     <!-- Bouton acheter -->
-    <button class="buy-btn" *ngIf="product.is_in_inventory; else notifyMe">ADD TO CART</button>
+    <button class="buy-btn" *ngIf="product.is_in_inventory; else notifyMe" appHover>ADD TO CART</button>
     <ng-template #notifyMe>
       <button class="buy-btn">NOTIFY ME</button>
     </ng-template>

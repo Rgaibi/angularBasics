@@ -1,4 +1,4 @@
-    <div class="product-item">
+    <div class="product-item" appHighlight>
 
         <!-- BADGE 75% OFF à gauche -->
         <div class="on-sale-tag" *ngIf="product.discountPrice">{{ (product.discountPrice / product.price * 100).toFixed(0) }}%</div>
