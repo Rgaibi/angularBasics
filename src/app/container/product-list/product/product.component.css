@@ -125,3 +125,12 @@ body {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
+.disabled-product {
+  pointer-events: none;       /* Empêche les clics */
+  opacity: 0.5;               /* Rend l’élément visuellement désactivé */
+  cursor: not-allowed;        /* Curseur interdit */
+  background-color: #ccc;     /* Fond gris clair */
+  color: #666;                /* Texte gris */
+  transition: 0.3s;           /* Pour un effet doux */
+}
+
